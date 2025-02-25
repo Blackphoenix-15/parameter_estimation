@@ -1,0 +1,33 @@
+Using device: cpu
+ Optimized Hybrid Model Initialized!
+ Dataset Loaded! Train batch shape: torch.Size([4, 2, 5000])
+ Epoch 1/20 - Average Loss: 1.112307
+ Epoch 2/20 - Average Loss: 0.648068
+ Epoch 3/20 - Average Loss: 0.358024
+ Epoch 4/20 - Average Loss: 0.393148
+ Epoch 5/20 - Average Loss: 0.298950
+ Epoch 6/20 - Average Loss: 0.234687
+ Epoch 7/20 - Average Loss: 0.203731
+ Epoch 8/20 - Average Loss: 0.203890
+ Epoch 9/20 - Average Loss: 0.185957
+ Epoch 10/20 - Average Loss: 0.201942
+ Epoch 11/20 - Average Loss: 0.125771
+ Epoch 12/20 - Average Loss: 0.081615
+ Epoch 13/20 - Average Loss: 0.056299
+ Epoch 14/20 - Average Loss: 0.048178
+ Epoch 15/20 - Average Loss: 0.036939
+ Epoch 16/20 - Average Loss: 0.031246
+ Epoch 17/20 - Average Loss: 0.033241
+ Epoch 18/20 - Average Loss: 0.058540
+ Epoch 19/20 - Average Loss: 0.058027
+ Early stopping triggered!
+🔍 Sample Predictions: [[ 2.1063113   0.14330475]
+ [-1.2984425  -0.48103416]
+ [-0.46451932  0.85412294]
+ [ 0.4425447   0.15576378]
+ [-0.8020757  -0.7158371 ]
+ [ 1.9141066   0.3972693 ]
+ [-1.3079036  -0.06210512]
+ [-0.0886041  -0.5526922 ]
+ [ 1.6834573  -0.01754192]
+ [-0.39605096 -0.9849035 ]]
