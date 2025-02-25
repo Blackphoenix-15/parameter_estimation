@@ -1,0 +1,25 @@
+Using device: cpu
+✅ Dataset Loaded! Train batch shape: torch.Size([4, 2, 5000])
+✅ Hybrid model initialized!
+✅ Epoch 1/20 - Average Loss: 1.041298
+✅ Epoch 2/20 - Average Loss: 0.851430
+✅ Epoch 3/20 - Average Loss: 0.714827
+✅ Epoch 4/20 - Average Loss: 0.581165
+✅ Epoch 5/20 - Average Loss: 0.454863
+✅ Epoch 6/20 - Average Loss: 0.365165
+✅ Epoch 7/20 - Average Loss: 0.311409
+✅ Epoch 8/20 - Average Loss: 0.273854
+✅ Epoch 9/20 - Average Loss: 0.228975
+✅ Epoch 10/20 - Average Loss: 0.204660
+✅ Epoch 11/20 - Average Loss: 0.189702
+✅ Epoch 12/20 - Average Loss: 0.179272
+✅ Epoch 13/20 - Average Loss: 0.168965
+✅ Epoch 14/20 - Average Loss: 0.134674
+✅ Epoch 15/20 - Average Loss: 0.121517
+✅ Epoch 16/20 - Average Loss: 0.162784
+✅ Epoch 17/20 - Average Loss: 0.158631
+✅ Epoch 18/20 - Average Loss: 0.116005
+✅ Epoch 19/20 - Average Loss: 0.102558
+✅ Epoch 20/20 - Average Loss: 0.121244
+
+✅ Model saved as 'hybrid_model.pth'!
