@@ -1,0 +1,32 @@
+# ---------------------------- MODEL DEFINITION ----------------------------
+
+class HybridModel(nn.Module):
+    def __init__(self, input_dim=5000, d_model=128, num_heads=4, num_layers=2, fcnn_hidden=64):
+        super(HybridModel, self).__init__()
+
+        # **New Linear Layer to Reduce Input Dim 5000 → 128**
+        self.input_projection = nn.Linear(input_dim, d_model)
+
+        self.transformer = nn.TransformerEncoder(
+            nn.TransformerEncoderLayer(d_model=d_model, nhead=num_heads, batch_first=True), 
+            num_layers=num_layers
+        )
+        
+        self.fc = nn.Sequential(
+            nn.Linear(d_model, fcnn_hidden),
+            nn.ReLU(),
+            nn.Linear(fcnn_hidden, 2)  # Output 2 values (U, V)
+        )
+
+    def forward(self, x):
+        x = self.input_projection(x)  # Reduce 5000 → 128
+        x = self.transformer(x)
+        x = self.fc(x[:, -1, :])  # Take the last timestep for prediction
+        return x
+
+# Initialize model
+model = HybridModel().to(device)
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+
+print("✅ Hybrid model initialized!")
