@@ -28,7 +28,7 @@ with h5py.File(dataset_filename, "w") as f:
     dset_U = f.create_dataset("U_data", (num_samples, N), dtype="float32", compression="gzip")
     dset_V = f.create_dataset("V_data", (num_samples, N), dtype="float32", compression="gzip")
 
-    print(f"🚀 Generating dataset and saving to '{dataset_filename}'...")
+    print(f" Generating dataset and saving to '{dataset_filename}'...")
 
     for i in tqdm(range(num_samples), desc="Generating Data", unit="sample"):
         U, V = np.zeros(N), np.zeros(N)
@@ -46,4 +46,4 @@ with h5py.File(dataset_filename, "w") as f:
         dset_U[i] = U
         dset_V[i] = V
 
-    print(f"✅ Dataset saved in '{dataset_filename}'. Ready for download!")
+    print(f" Dataset saved in '{dataset_filename}'. Ready for download!")
